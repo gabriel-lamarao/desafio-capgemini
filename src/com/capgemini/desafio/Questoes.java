@@ -19,12 +19,6 @@ public class Questoes {
     }
 
     public static void verificaSenha(String senha){
-        // um digito
-        // um minusculo
-        // um maiusculo
-        // um caractere especial
-
-
 
         String temp = senha.strip();
 
@@ -32,12 +26,30 @@ public class Questoes {
             System.out.println("A senha precisa ter pelo menos 6 caracteres!");
         }
 
+        // um minusculo
+        // um maiusculo
+        // um caractere especial
+        String regexDigito = "\\d"; // Encontra a poscição dos digitos
+        String regexMinMai = "[a-zA-Z]";
+
+        Pattern pattern = Pattern.compile(regexDigito);
+        Matcher matcher = pattern.matcher(senha);
+
+        System.out.println("Senha:  " + senha);
+        System.out.println("Indice: 0123456789");
+        System.out.println("Expressão: " + matcher.pattern());
+        System.out.println("Posições encontradas: ");
+        while (matcher.find()){
+            System.out.print(matcher.start() +" ");
+        }
+
+
 
     }
 
 
     public static void main(String[] args) {
         //escada(6); // Questão 1
-        verificaSenha("A");
+        verificaSenha("AabB#1@");
     }
 }
