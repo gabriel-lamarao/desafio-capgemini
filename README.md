@@ -6,6 +6,7 @@ Instrução para testar o codigo:
   2.2 IDE de sua preferencia, (InteliJ ou Eclipse) Recomendo InteliJ.
 3) Após importar o projeto vá até o arquivo Main e execute-o.
 4) Voce deve usar como entrada de dados para cada questão, as chamadas de funções.
-  4.1) Exemplo: 
-              escada(valor da entrada);
-              validaSenha(Valor da entrada);
+
+4.1) Exemplo: 
+escada (valor da entrada);
+validaSenha (Valor da entrada);
