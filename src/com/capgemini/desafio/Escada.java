@@ -1,9 +1,6 @@
 package com.capgemini.desafio;
 
-
-import static com.capgemini.desafio.ValidaSenha.validaSenha;
-
-public class Questoes {
+public class Escada {
     public static void escada(int tamanho){
         for (int i = 0; i <= tamanho; i++) {
             for (int j = tamanho; j > 0; j--) {
@@ -15,11 +12,5 @@ public class Questoes {
             }
             System.out.println();
         }
-    }
-
-
-    public static void main(String[] args) {
-        //escada(6); // Questão 1
-        validaSenha("Ya3&ab");
     }
 }
