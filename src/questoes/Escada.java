@@ -1,4 +1,4 @@
-package com.capgemini.desafio;
+package questoes;
 
 public class Escada {
     public static void escada(int tamanho){
