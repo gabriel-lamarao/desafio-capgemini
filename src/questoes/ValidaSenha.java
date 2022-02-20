@@ -93,14 +93,14 @@ public class ValidaSenha {
         }
         // A posicao [3] representa um caractere especial
         if (checkSenha [3] != 1){
-            System.out.println("Requer caractere especial!");
+            System.out.println("Requer um caractere especial!");
             pendencias += 1;
         }
         // A posicao [4] representa o tamanho minimo da senha
         if (checkSenha [4] != 1){
             System.out.println("Requer no minimo 6 caracteres!");
             if (pendencias > 0){
-                System.out.println("Senha fraca! Adicione " +  pendencias + " tipo(s) de caractere(s) pendente(s)!");
+                System.out.println("Senha fraca! Adicione " +  (pendencias + (6 - temp.length())) + " tipo(s) de caractere(s) pendente(s)!");
             }
         }
 
